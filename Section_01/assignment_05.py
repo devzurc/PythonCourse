@@ -19,11 +19,13 @@
 chars = "<<[]]]" # this could be a very long string with an even length.
 word = "Cool"
 
+
 # Expected Result Printed: <<[Cool]]]
-
-
 # Your code below:
+size = len(chars)
+idx = int(size/2) # dividing results in a float datatype.
 
+print(chars[:idx] + word + chars[idx:])
 
 
 
